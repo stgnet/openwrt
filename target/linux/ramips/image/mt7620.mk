@@ -1124,6 +1124,16 @@ define Device/zbtlink_zbt-wr8305rt
 endef
 TARGET_DEVICES += zbtlink_zbt-wr8305rt
 
+define Device/zbtlink_zbt-wr8305rt-16m
+  SOC := mt7620n
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Zbtlink
+  DEVICE_MODEL := ZBT-WR8305RT-16M
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+  SUPPORTED_DEVICES += zbt-wr8305rt,zbt-wr8305rt-16m
+endef
+TARGET_DEVICES += zbtlink_zbt-wr8305rt-16m
+
 define Device/zte_q7
   SOC := mt7620a
   IMAGE_SIZE := 7872k

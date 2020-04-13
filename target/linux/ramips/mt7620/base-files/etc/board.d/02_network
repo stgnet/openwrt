@@ -28,6 +28,7 @@ ramips_setup_interfaces()
 	zbtlink,zbt-we826-32m|\
 	zbtlink,zbt-we826-e|\
 	zbtlink,zbt-wr8305rt|\
+	zbtlink,zbt-wr8305rt-16m|\
 	zyxel,keenetic-omni)
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
